@@ -1,0 +1,21 @@
+&control
+    calculation = 'scf'
+    prefix = 'example'
+    outdir = './out'
+/
+&system
+    ibrav = 2
+    celldm(1) = 10.2
+    nat = 1
+    ntyp = 1
+    ecutwfc = 40.0
+/
+&electrons
+    mixing_beta = 0.7
+/
+ATOMIC_SPECIES
+Si 28.0855 Si.pz-vbc.UPF
+ATOMIC_POSITIONS (alat)
+Si 0.00 0.00 0.00
+K_POINTS (automatic)
+4 4 4 1 1 1
